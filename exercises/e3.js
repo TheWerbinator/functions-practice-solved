@@ -15,11 +15,12 @@
 
 const doesArrayIncludeItemsBetweenVals = (arr, val1, val2) => {
   let solution = false;
-  arr.forEach(value => {
+  for(let value of arr) {
     if(value > val1 && value < val2) {
       solution = true
+      break
     }
-  });
+  };
   return solution
 }
 
