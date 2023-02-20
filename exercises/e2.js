@@ -11,7 +11,7 @@
 */
 
 const rectArea = (sideA, sideB) => {
-  return sideA * sideB
+  return sideA * sideB;
 }
 
 // Use the function you created above to calculate the areas of 3 rooms
@@ -32,14 +32,14 @@ const room3 = rectArea(4, 8)
  * totalRoomsArea(24, 35, 24) => 83
 */
 
-const totalRoomsArea = (a, b, c) => {
-  return a + b + c
+const totalRoomsArea = (room1, room2, room3) => {
+  return room1 + room2 + room3;
 }
 
 // Make the function call in the parentheses of the console.log statement.
 // Use room1, room2, room3 values as arguments for the function call
 const result = function () {
-    console.log(totalRoomsArea(room1, room2, room3));
+  console.log(totalRoomsArea(room1, room2, room3));
 }
 
 // === TEST YOURSELF ===
@@ -50,9 +50,9 @@ const result = function () {
 
 // Do not delete or change the lines beneath
 const f = {
-    rectArea: rectArea || undefined,
-    roomVars: [room1 || undefined, room2 || undefined, room3 || undefined],
-    totalRoomsArea: totalRoomsArea || undefined,
-    result: (room1 && room2 && room3) ? result : undefined,
+  rectArea: rectArea || undefined,
+  roomVars: [room1 || undefined, room2 || undefined, room3 || undefined],
+  totalRoomsArea: totalRoomsArea || undefined,
+  result: (room1 && room2 && room3) ? result : undefined,
 }
 export { f };
